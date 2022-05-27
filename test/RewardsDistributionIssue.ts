@@ -42,7 +42,7 @@ describe("Synthetix Staking Rewards", function () {
     await stakingToken.connect(staker).approve(sr.address, 100);
     await sr.connect(staker).stake(100);
 
-    // reward distrivtion period is passed
+    // reward distribution period is passed
     await network.provider.send("evm_increaseTime", [oneMonthSec * 2]);
 
     // claim rewards
@@ -55,7 +55,7 @@ describe("Synthetix Staking Rewards", function () {
     // so, as per current implementation, only 2588398 tokens can be distributed from the intended 2592000.
     // this difference between what the project intended to do and the actual will increase in direct proportion to delay.
     // this is not an exploitable scenario, it's just project's loss.
-    // as of now, they will have to start a new cycle to distribute those unused tokens.
+    // as of now, project will have to start a new cycle to distribute those unused tokens.
     // hence, consider defining periodFinish in the first stake done after notifyRewardAmount
   });
 });

@@ -15,7 +15,7 @@ branch : develop
 ``./test/RewardsDistributionIssue``
 
 The same issue is described in detail here</br> 
-(it's for an extended version, so the names of variables are different, but the cause is the same)</br>
+(it's for an extended version, so the names of variables are different, but the cause is same)</br>
 
 https://www.notion.so/0xmacro/Rewards-distribution-076a3c6715144064b5b7b8dfff16c450
 
